@@ -3,71 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My personal Swamppage</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <p>
-    Image from Shrek 5 trailer (Leak from DreamWork)
-   </p>
-   <img src="https://preview.redd.it/i-think-the-shrek-5-trailer-is-just-a-joke-from-dreamworks-v0-255a5xa3egpe1.jpeg?width=640&crop=smart&auto=webp&s=aa7c77cf59e8ab7f09e49bbf54ae4c9d37815a63" alt="Fiction character" />
+   <header>
+        <h1>Welcome to Shrek Space</h1>
+   </header>
+
+   <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li>
+                    <a href="hobby.html" target="content-frame">My Hobbies</a>
+                </li>
+                <li>
+                    <a href="to_do.html" target="content-frame">Monthly to-do lists</a>
+                </li>
+                <li>
+                    <a href="video.html" target="content-frame">Featured Video</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="content" id="main-content">
+            <iframe src="welcome.html" name="content-frame" frameborder="0"></iframe>
+        </main>
+   </div>
+
+   <section class="form-section">
+    <h3>Contact Me</h3>
+    <form id="contact-form">
+        <div class="form-row">
+            <input type="text" placeholder="Full Name" required />
+            <input type="number" placeholder="Age" required />
+        </div>
+        <div class="form-row">
+            <select required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <input type="email" placeholder="Email Address" required />
+        </div>
+        <textarea placeholder="Write your questions or comments here..." row="5"></textarea>
+        <button type="sumbit">Sumbit Message</button>
+    </form>
+   </section>
    
-   <h2>I am secretly in love with mc
-
-   </h2>
-   
-   <h1>
-   <iframe 
-   height="215px"
-   width="415px"
-   src="https://packaged-media.redd.it/d7v4fqazkple1/pb/m2-res_720p.mp4?m=DASHPlaylist.mpd&v=1&e=1770116400&s=278ba9060ab1148e45bf1f3806c5a26f08b13916" 
-   ></iframe>
-   </h1>
-
-    <br/><br/>
-
-   <form action="">
-        <h3>Me</h3>
-        <label for="name"><strong>Name:</strong></label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-        <br/><br/>
-
-        <label><strong>Type:</strong></label>
-        <input type="radio" id="ogre" name="gender" value="ogre">
-        <label for="ogre">Ogre</label>
-        <input type="radio" id="donkey" name="gender" value="donkey">
-        <label for="donkey">Donkey</label>
-        <br/><br/>
-
-        <label><strong>Hobbies:</strong></label>
-        <input type="checkbox" id="eating" name="hobbies" value="eating">
-        <label for="eating">Eating</label>
-        <input type="checkbox" id="traveling" name="hobbies" value="traveling">
-        <label for="traveling">Traveling</label>
-        <input type="checkbox" id="attacking" name="hobbies" value="attacking">
-        <label for="sports">Attacking</label>
-        <br/><br/>
-
-        <button type="submit">Submit</button>
-
-       <h4>Contact Me</h4>
-        <form id="Contact">
-            <div class="form-row">
-                <input type="text" id="name" placeholder="Full name" required/>
-                <input type="number" id="age" placeholder="Age" required/>
-            </div>
-
-            <div class="form-row">
-                <input type="email" id="email" placeholder="Email Address" required/>
-            </div>
-            <textarea name="comment" id="comment" placeholder="About You"></textarea>
-            <br/><br/>
-
-            <button type="submit">Sumbit</button>
-        </form>
-   </form>
 </body>
-
 </html>
-
-
